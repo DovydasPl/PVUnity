@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent (typeof (Controller2D))]
+[RequireComponent(typeof(Controller2D))]
 public class Player : MonoBehaviour
 {
 
@@ -11,7 +11,8 @@ public class Player : MonoBehaviour
     float angleDeg;
 
     Vector3 lookAt;
-    Vector3 velocity;
+    [HideInInspector]
+    public Vector3 velocity;
 
     Controller2D controller;
 
