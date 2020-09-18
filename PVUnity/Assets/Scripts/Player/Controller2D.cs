@@ -66,7 +66,6 @@ public class Controller2D : MonoBehaviour
     void AnimateLePlayer(Vector3 velocity)
     {
         anim.SetFloat("velocityX", Mathf.Abs(velocity.x));
-        anim.SetFloat("velocityY", velocity.y);
     }
 
     void FlipX(float x)
