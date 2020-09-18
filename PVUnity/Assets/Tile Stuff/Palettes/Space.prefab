@@ -41,6 +41,60 @@ Tilemap:
   m_GameObject: {fileID: 2308660764051471627}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -3, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -2, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 8
+      m_TileSpriteIndex: 8
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: -1, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 9
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 0, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 10
+      m_TileSpriteIndex: 10
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 1, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 11
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 2, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: -3, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -120,6 +174,18 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 5457bb1a0fdf12d4797db9837c784778, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 27c6530e9d7c67e42b95f7624fedd506, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: dbd60b17f772e6b4bbaa709b34944325, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 7a06e6039758ef742930c73435ae9ac7, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 00cdf6425367b9042aff587b54cd9791, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 44cfd4a3cd2441a48a9a3bf601f2bd58, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 0b0673215fdf3624abda2c1195408f90, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: ce77dcd830d3d0a48aa0501e5105f967, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 8668329294884058991, guid: a7b4da1e599059c45a490c6e3be19eee,
@@ -142,8 +208,26 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -8067105332525568798, guid: a7b4da1e599059c45a490c6e3be19eee,
       type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -3337038689812066966, guid: 728dc804018d8094aa25933ae9ea7314,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -2836335398978793527, guid: 728dc804018d8094aa25933ae9ea7314,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 4854397496335690116, guid: 728dc804018d8094aa25933ae9ea7314,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 2730825291635158166, guid: 728dc804018d8094aa25933ae9ea7314,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 7042712667217132043, guid: 728dc804018d8094aa25933ae9ea7314,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 6235791727157145887, guid: 728dc804018d8094aa25933ae9ea7314,
+      type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 7
+  - m_RefCount: 13
     m_Data:
       e00: 1
       e01: 0
@@ -162,13 +246,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 7
+  - m_RefCount: 13
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -3, y: 0, z: 0}
-  m_Size: {x: 7, y: 1, z: 1}
+  m_Origin: {x: -3, y: -1, z: 0}
+  m_Size: {x: 7, y: 2, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:

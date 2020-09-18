@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     Vector3 velocity;
 
     Controller2D controller;
-    
+
     void Start()
     {
         controller = GetComponent<Controller2D>();
@@ -30,10 +30,13 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        //Look at mouse, no need for now
+        /*
         lookAt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         angleRad = Mathf.Atan2(lookAt.y - this.transform.position.y, lookAt.x - this.transform.position.x);
         angleDeg = (180 / Mathf.PI) * angleRad;
         controller.RotateToMouse(angleDeg);
+        */
     }
 
 
