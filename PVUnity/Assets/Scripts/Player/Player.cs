@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    float moveSpeed = 10f;
+    public float moveSpeed = 10f;
     float angleRad;
     float angleDeg;
 
