@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 2cdbc5351b731854d8597b7cc9be7609
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sever Sans
+  fontNames:
+  - Sever Sans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1368abc12a2c946489d1982274603e3f, type: 3}
+  - {fileID: 12800000, guid: 05ca5478d0b35dd45b35b38c168595e4, type: 3}
+  - {fileID: 12800000, guid: ebd022cb51115514d8d2e9d32f0d29dc, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

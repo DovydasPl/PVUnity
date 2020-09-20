@@ -22,7 +22,7 @@ public class SendMessage : MonoBehaviour
         if (wait == true && pause < pauseTime)
         {
             pause += 1 * Time.deltaTime;
-            sendMessage(0);
+            SendMsg(0);
         }
         else
         {
@@ -33,9 +33,10 @@ public class SendMessage : MonoBehaviour
         
     }
     //
-    public void sendMessage(int id)
+    public void SendMsg(int id)
     {
         messageBox.text = dialogMessage[id];
     }
+
 
 }

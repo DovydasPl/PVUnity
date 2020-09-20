@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: c216917768bc9b64f991e9070a60e42d
+guid: 96308931606838d48bd0efb78af14d5c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5532937855524258295
-    second: Weapons high tech_0
+      213: 8136732245339701582
+    second: HighTechWeaponsPart1_0
   - first:
-      213: 4340229749064715895
-    second: Weapons high tech_1
+      213: 728847316663562762
+    second: HighTechWeaponsPart1_1
   - first:
-      213: -7235190550882765636
-    second: Weapons high tech_2
+      213: 809373155226869267
+    second: HighTechWeaponsPart1_2
+  - first:
+      213: -5515714740329727876
+    second: HighTechWeaponsPart1_3
+  - first:
+      213: 3700421331823447767
+    second: HighTechWeaponsPart1_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -73,7 +79,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,7 +91,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,11 +102,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Weapons high tech_0
+      name: HighTechWeaponsPart1_0
       rect:
         serializedVersion: 2
         x: 10
-        y: 132
+        y: 42
         width: 26
         height: 26
       alignment: 0
@@ -110,18 +116,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90e3a2dc55e0733b0800000000000000
-      internalID: -5532937855524258295
+      spriteID: e4180fbedda7be070800000000000000
+      internalID: 8136732245339701582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weapons high tech_1
+      name: HighTechWeaponsPart1_1
       rect:
         serializedVersion: 2
         x: 42
-        y: 132
+        y: 42
         width: 17
         height: 17
       alignment: 0
@@ -131,18 +137,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77ec59416f79b3c30800000000000000
-      internalID: 4340229749064715895
+      spriteID: a027a3dd5c26d1a00800000000000000
+      internalID: 728847316663562762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Weapons high tech_2
+      name: HighTechWeaponsPart1_2
       rect:
         serializedVersion: 2
         x: 10
-        y: 101
+        y: 11
         width: 26
         height: 15
       alignment: 0
@@ -152,8 +158,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb4be541780779b90800000000000000
-      internalID: -7235190550882765636
+      spriteID: 31ed800b8987b3b00800000000000000
+      internalID: 809373155226869267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighTechWeaponsPart1_3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 12
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78b24ccaae3473b0800000000000000
+      internalID: -5515714740329727876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighTechWeaponsPart1_4
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 11
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de4d9a78998a5330800000000000000
+      internalID: 3700421331823447767
       vertices: []
       indices: 
       edges: []
