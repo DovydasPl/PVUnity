@@ -8,6 +8,7 @@ public class Controller2D : MonoBehaviour
 {
     public LayerMask collisionMask;
     public GameObject playerGFX;
+    Weapon weapon;
     SpriteRenderer sr;
     Animator anim;
 
@@ -34,6 +35,7 @@ public class Controller2D : MonoBehaviour
         CalculateRaySpacing();
         leftRotation = new Vector2(0f, 180f);
         rightRotation = new Vector2(0f, 0f);
+        weapon = GetComponentInChildren<Weapon>();
     }
 
     public void Move(Vector3 velocity)
@@ -73,11 +75,12 @@ public class Controller2D : MonoBehaviour
         if(x > 0)
         {
             playerGFX.transform.eulerAngles = rightRotation;
+            weapon.FlipY(false);
         }else
         if (x < 0)
         {
             playerGFX.transform.eulerAngles = leftRotation;
-
+            weapon.FlipY(true);
         }
     }
 
