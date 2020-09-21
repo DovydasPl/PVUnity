@@ -7,23 +7,13 @@ public class ShootGun : MonoBehaviour
     Vector3 shootDirection;
     public Rigidbody2D projectile;
     public float projectileSpd;
+    public Transform gunPoint;
 
-    void Update()
+    public void Shoot(Vector3 screenToWorld)
     {
-        Vector3 mouseScreen = Input.mousePosition;
-        Vector3 mouse = Camera.main.ScreenToWorldPoint(mouseScreen);
-       
-        transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(mouse.y - transform.position.y, mouse.x - transform.position.x) * Mathf.Rad2Deg );
-
-        shootDirection = Input.mousePosition;
-        shootDirection.z = 0.0f;
-        shootDirection = Camera.main.ScreenToWorldPoint(shootDirection);
+        shootDirection = screenToWorld;
         shootDirection = shootDirection - transform.position;
-
-        if (Input.GetMouseButton(0))
-        {
-            Rigidbody2D bulletInstance = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody2D;
-            bulletInstance.velocity = new Vector2(shootDirection.x , shootDirection.y).normalized *projectileSpd; 
-        }
+        Rigidbody2D bulletInstance = Instantiate(projectile, gunPoint.position, transform.rotation) as Rigidbody2D;
+        bulletInstance.velocity = new Vector2(shootDirection.x, shootDirection.y).normalized * projectileSpd;
     }
 }

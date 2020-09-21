@@ -9558,6 +9558,36 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &828614924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 828614925}
+  m_Layer: 0
+  m_Name: GunPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &828614925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828614924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.153, y: 0.045, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1303529794}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!213 &880226780
 Sprite:
   m_ObjectHideFlags: 0
@@ -10275,9 +10305,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303529793}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.12999964, y: -0.090000026, z: 0}
+  m_LocalPosition: {x: -0.37, y: -0.090000026, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
-  m_Children: []
+  m_Children:
+  - {fileID: 828614925}
   m_Father: {fileID: 526617694}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10296,6 +10327,7 @@ MonoBehaviour:
   projectile: {fileID: 4993450881484361033, guid: 212f2925fc82a694c816849469a86dd9,
     type: 3}
   projectileSpd: 45
+  gunPoint: {fileID: 828614925}
 --- !u!212 &1303529796
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17222,7 +17254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466680073}
   m_LocalRotation: {x: -0, y: -0, z: -0.14020611, w: 0.9901224}
-  m_LocalPosition: {x: 17.770123, y: -3.236282, z: -6.420782}
+  m_LocalPosition: {x: 17.58, y: 0.98, z: -6.420782}
   m_LocalScale: {x: 40.35, y: 10.0314, z: 6}
   m_Children: []
   m_Father: {fileID: 941642204}
