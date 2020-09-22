@@ -30,6 +30,6 @@ public class Weapon : MonoBehaviour
 
     public void FlipY(bool x)
     {
-        spriteRenderer.flipY = x;
+        spriteRenderer.flipY = x;   
     }
 }

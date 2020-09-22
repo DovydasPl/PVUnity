@@ -41,10 +41,12 @@ public class Controller2D : MonoBehaviour
     public void Move(Vector3 velocity)
     {
         UpdateRaycastOrigins();
+        /* siuliciau istrint sita :D
         if (velocity.x != 0)
         {
-            FlipX(velocity.x);
+            //FlipX(velocity.x);
         }
+        */
         if (velocity.x != 0)
         {
             HorizontalCollisions(ref velocity);
@@ -64,7 +66,19 @@ public class Controller2D : MonoBehaviour
     {
         playerGFX.transform.rotation = Quaternion.Euler(0, 0, angleDeg);
     }
-
+    public void FlipToMouse(float x)
+    {
+        if(x > Screen.width/2)
+        {
+            playerGFX.transform.eulerAngles = rightRotation;
+            weapon.FlipY(false);
+        }
+        else
+        {
+           playerGFX.transform.eulerAngles = leftRotation;
+            weapon.FlipY(true);
+        }
+    }
     void AnimateLePlayer(Vector3 velocity)
     {
         anim.SetFloat("velocityX", Mathf.Abs(velocity.x));

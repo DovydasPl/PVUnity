@@ -26,7 +26,8 @@ public class Player : MonoBehaviour
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         velocity.x = input.x * moveSpeed;
         velocity.y = input.y * moveSpeed;
-        controller.Move(velocity * Time.deltaTime);
+        controller.Move(velocity * Time.deltaTime); 
+        controller.FlipToMouse(Input.mousePosition.x);
     }
 
     void Update()
