@@ -25,7 +25,7 @@ public class SendMessage : MonoBehaviour
     //
     public void SendMsg(int id)
     {
-        dc.Fade();
+      //  dc.Fade();
         messageBox.text = dialogMessage[id];
         ///kazkiek laiko
         //dc.Fade();

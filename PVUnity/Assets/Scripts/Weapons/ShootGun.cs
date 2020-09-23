@@ -14,6 +14,8 @@ public class ShootGun : MonoBehaviour
     public int ammoTotal = 210;
     public int magSize = 30;
     public int ammoInMag = 30;
+    public float rateOfFire = 10;
+    public float reloadTime = 1.2f;
     public Text ammoDisplay;
     public SendMessage sendMsg;
 
@@ -34,7 +36,8 @@ public class ShootGun : MonoBehaviour
     {
         if(ammoTotal > 0)
         {
-           if(ammoTotal > magSize)
+            sendMsg.SendMsg(2);
+            if (ammoTotal > magSize)
             {
                 ammoInMag = magSize;
             }
