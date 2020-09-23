@@ -12,8 +12,10 @@ public class Weapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         spriteRenderer = GetComponent<SpriteRenderer>();
         gun = GetComponent<ShootGun>();
+        gun.DisplayAmmo();
     }
 
     // Update is called once per frame
@@ -26,6 +28,11 @@ public class Weapon : MonoBehaviour
         {
              gun.Shoot(mouse);
         }   
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            gun.Reload();
+            gun.DisplayAmmo();
+        }
     }
 
     public void FlipY(bool x)

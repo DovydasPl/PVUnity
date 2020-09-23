@@ -19,23 +19,16 @@ public class SendMessage : MonoBehaviour
     //just for testing=
     void Update()
     {
-        if (wait == true && pause < pauseTime)
-        {
-            pause += 1 * Time.deltaTime;
-            SendMsg(0);
-        }
-        else
-        {
-            dc.Fade();
-            wait = true;
-            pause = 0;
-        }
+       
         
     }
     //
     public void SendMsg(int id)
     {
+        dc.Fade();
         messageBox.text = dialogMessage[id];
+        ///kazkiek laiko
+        //dc.Fade();
     }
 
 
