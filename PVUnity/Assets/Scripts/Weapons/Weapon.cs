@@ -13,6 +13,7 @@ public class Weapon : MonoBehaviour
     float shotCooldown = 0;
     float reloadCooldown = 0;
     bool reloading;
+    public float damage = 50f;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +44,14 @@ public class Weapon : MonoBehaviour
             gun.Reload();
             gun.DisplayAmmo();
         }
-        if(shotCooldown > 0) shotCooldown -= 1 * Time.deltaTime;
+        if (gun.ammoInMag <= 0 && reloadCooldown <= 0)
+        {
+            reloadCooldown += reloadTime;
+            reloading = true;
+            gun.Reload();
+            gun.DisplayAmmo();
+        }
+        if (shotCooldown > 0) shotCooldown -= 1 * Time.deltaTime;
         if (reloadCooldown > 0) reloadCooldown -= 1 * Time.deltaTime;
         if (reloadCooldown <= 0) reloading = false;
     }

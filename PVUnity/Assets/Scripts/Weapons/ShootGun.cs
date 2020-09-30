@@ -26,6 +26,7 @@ public class ShootGun : MonoBehaviour
             shootDirection = screenToWorld;
             shootDirection = shootDirection - transform.position;
             Rigidbody2D bulletInstance = Instantiate(projectile, gunPoint.position, transform.rotation) as Rigidbody2D;
+            bulletInstance.GetComponent<Bullet>().damage = GetComponent<Weapon>().damage;
             bulletInstance.velocity = new Vector2(shootDirection.x, shootDirection.y).normalized * projectileSpd;
             ammoInMag--;
             ammoTotal--;
@@ -55,6 +56,10 @@ public class ShootGun : MonoBehaviour
     public void DisplayAmmo()
     {
         ammoDisplay.text = ammoInMag + "/" + ammoTotal;
+    }
+    public int GetAmmoInMag()
+    {
+        return ammoInMag;
     }
 
 }
