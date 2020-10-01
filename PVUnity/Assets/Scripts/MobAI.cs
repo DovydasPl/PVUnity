@@ -17,7 +17,6 @@ public class MobAI : MonoBehaviour
         initialPos = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (hp <= 0) Destroy(this.gameObject);
