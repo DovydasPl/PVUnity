@@ -19,8 +19,9 @@ public class Pickable : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-      
-        if (col.gameObject.tag == "player")
+        Debug.Log("gay");
+
+        if (col.gameObject.tag == "Player")
         {
           col.GetComponent<Inventory>().keyCard = true;
             Destroy(this.gameObject);
