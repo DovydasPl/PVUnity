@@ -58,6 +58,7 @@ public class Weapon : MonoBehaviour
 
     public void FlipY(bool x)
     {
+        if (spriteRenderer == null) return;
         spriteRenderer.flipY = x;   
     }
 }

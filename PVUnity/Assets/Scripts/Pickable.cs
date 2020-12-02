@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pickable : MonoBehaviour
 {
+
+    public GameObject weapon;
     float yCenter;
     float height = 3f;
     // Start is called before the first frame update
@@ -19,12 +21,11 @@ public class Pickable : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("gay");
-
+        /*
         if (col.gameObject.tag == "Player")
         {
           col.GetComponent<Inventory>().keyCard = true;
             Destroy(this.gameObject);
-        }
+        }*/
     }
 }

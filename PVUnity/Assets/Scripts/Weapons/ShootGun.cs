@@ -16,8 +16,14 @@ public class ShootGun : MonoBehaviour
     public int ammoInMag = 30;
     public float rateOfFire = 10;
     public float reloadTime = 1.2f;
-    public Text ammoDisplay;
-    public SendMessage sendMsg;
+    private Text ammoDisplay;
+    private SendMessage sendMsg;
+
+    void Start()
+    {
+        ammoDisplay = GameObject.Find("AmmoText").GetComponent<Text>();
+        sendMsg = GameObject.Find("StageMessageControllerMain").GetComponent<SendMessage>();
+    }
 
     public void Shoot(Vector3 screenToWorld)
     {
@@ -37,7 +43,7 @@ public class ShootGun : MonoBehaviour
     {
         if(ammoTotal > 0)
         {
-            sendMsg.SendMsg(2);
+            SendMessage(2);
             if (ammoTotal > magSize)
             {
                 ammoInMag = magSize;
@@ -49,13 +55,35 @@ public class ShootGun : MonoBehaviour
 
         }else
         {
-            sendMsg.SendMsg(1);
+            SendMessage(1);
         }
 
     }
+
+    public void GiveAmmo(int ammo)
+    {
+        ammoTotal += ammo;
+        if(ammoTotal > maxAmmo)
+        {
+            ammoTotal = maxAmmo;
+        }
+    }
+
+    void SendMessage(int index)
+    {
+        if (sendMsg == null) return;
+        sendMsg.SendMsg(index);
+    }
     public void DisplayAmmo()
     {
+        if (ammoDisplay == null) return;
         ammoDisplay.text = ammoInMag + "/" + ammoTotal;
+    }
+
+    public void DisplayEmptyAmmo()
+    {
+        if (ammoDisplay == null) return;
+        ammoDisplay.text = "0/0";
     }
     public int GetAmmoInMag()
     {

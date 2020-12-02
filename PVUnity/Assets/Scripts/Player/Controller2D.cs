@@ -26,6 +26,10 @@ public class Controller2D : MonoBehaviour
     BoxCollider2D boxCollider;
     RaycastOrigins raycastOrigins;
     
+    public void SetWeapon(Weapon wep)
+    {
+        weapon = wep;
+    }
 
     void Start()
     {
