@@ -39,7 +39,7 @@ public class Inventory : MonoBehaviour
             if (hit.collider.CompareTag("KeyPickup"))
             {   
                 keyCard = true;
-                Object.Destroy(hit.collider.gameObject);
+                Object.Destroy(hit.collider.gameObject.transform.parent.gameObject);
             }
             if (hit.collider.CompareTag("AmmoPickup"))
             {

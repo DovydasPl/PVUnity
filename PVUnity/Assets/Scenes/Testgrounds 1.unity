@@ -5290,12 +5290,12 @@ PrefabInstance:
     - target: {fileID: 4703270810750771113, guid: 9acc4b2f852a45b49823a169fbae6360,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.476572
+      value: 29.45
       objectReference: {fileID: 0}
     - target: {fileID: 4703270810750771113, guid: 9acc4b2f852a45b49823a169fbae6360,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.082331255
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4703270810750771113, guid: 9acc4b2f852a45b49823a169fbae6360,
         type: 3}
@@ -12873,6 +12873,25 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!1 &1630383148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 429889427716104057, guid: 50769bc5d9dd2df4db9c9b6dc2b424be,
+    type: 3}
+  m_PrefabInstance: {fileID: 429889428619299516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1630383152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630383148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2758919ec2fe0a6458b048f559c46771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 0}
 --- !u!1 &1769939272
 GameObject:
   m_ObjectHideFlags: 0
@@ -13779,6 +13798,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEXTLEVEL
       objectReference: {fileID: 0}
+    - target: {fileID: 4543350656898622451, guid: 8d90051907ee6534a9f5257a7842ec56,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.014964481
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543350656898622451, guid: 8d90051907ee6534a9f5257a7842ec56,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.09067955
+      objectReference: {fileID: 0}
     - target: {fileID: 4543350656898622452, guid: 8d90051907ee6534a9f5257a7842ec56,
         type: 3}
       propertyPath: levelID
@@ -13788,6 +13817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Doors
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543350656898622454, guid: 8d90051907ee6534a9f5257a7842ec56,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d90051907ee6534a9f5257a7842ec56, type: 3}
