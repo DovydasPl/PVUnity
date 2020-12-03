@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MobAI : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
      float hp = 300f;
     float noticeRadius = 5f;
      float speed = 5f;
@@ -13,6 +13,7 @@ public class MobAI : MonoBehaviour
     Vector3 initialPos;
     void Start()
     {
+        target = GameObject.Find("Player").GetComponent<Transform>();
         targetPos = new Vector3(transform.position.x + Random.Range(-3, 3), transform.position.y + Random.Range(-3, 3), -2);
         initialPos = transform.position;
     }
