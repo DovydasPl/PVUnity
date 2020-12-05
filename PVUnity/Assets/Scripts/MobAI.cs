@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MobAI : MonoBehaviour
 {
+    public float damage = 5f;
     private Transform target;
      float hp = 300f;
     float noticeRadius = 5f;
@@ -32,6 +33,10 @@ public class MobAI : MonoBehaviour
         {
             aggressive = true;
             targetPos = new Vector3(target.transform.position.x, target.transform.position.y,-2);
+            if(Vector2.Distance(target.position, transform.position) <= 1f)
+            {
+                DamagePlayer();
+            }
         }
         else
         {
@@ -49,6 +54,10 @@ public class MobAI : MonoBehaviour
         {
             hp -= bullet.gameObject.GetComponent<Bullet>().damage;
         }
+    }
+    void DamagePlayer()
+    {
+        target.GetComponent<Player>().ReceiveDamage(damage * Time.deltaTime);
     }
 
 

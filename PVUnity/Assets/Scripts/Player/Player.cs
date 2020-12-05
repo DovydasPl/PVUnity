@@ -1,15 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Controller2D))]
 public class Player : MonoBehaviour
 {
-
+    public Text hpText;
     public float moveSpeed = 10f;
+    public float health = 100f;
     float angleRad;
     float angleDeg;
 
+
+    public ParticleSystem bloodParticles;
+    float delay = 0.5f;
+    float timePassed = 0f;
+
+    bool gettingDamaged = false;
     Vector3 lookAt;
     [HideInInspector]
     public Vector3 velocity;
@@ -32,14 +40,35 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        //Look at mouse, no need for now
-        /*
-        lookAt = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        angleRad = Mathf.Atan2(lookAt.y - this.transform.position.y, lookAt.x - this.transform.position.x);
-        angleDeg = (180 / Mathf.PI) * angleRad;
-        controller.RotateToMouse(angleDeg);
-        */
+        if(timePassed <= delay )
+        {
+            timePassed += 1 * Time.deltaTime;
+        }
+        else
+        {
+            gettingDamaged = false;
+            
+        }
+
+        if (gettingDamaged == true)
+        {
+            bloodParticles.emissionRate = 30;
+            
+        }else
+        {
+            bloodParticles.emissionRate = 0f;
+        }
+
     }
+    public void ReceiveDamage(float damage)
+    {
+        health -= damage;
+        hpText.text = "HP:" +Mathf.Round(health).ToString();
+        gettingDamaged = true;
+        timePassed = 0;
+
+    }
+    
 
 
 }
