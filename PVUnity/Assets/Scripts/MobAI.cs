@@ -10,6 +10,7 @@ public class MobAI : MonoBehaviour
     float noticeRadius = 5f;
      float speed = 5f;
     bool aggressive = false;
+    public GameObject keycard;
     Vector3 targetPos;
     Vector3 initialPos;
     void Start()
@@ -21,7 +22,12 @@ public class MobAI : MonoBehaviour
 
     void Update()
     {
-        if (hp <= 0) Destroy(this.gameObject);
+        if (hp <= 0)
+        {
+            Vector3 deadPos = new Vector3(this.transform.position.x, this.transform.position.y, -2);
+            if (keycard != null) Instantiate(keycard, deadPos, Quaternion.identity);
+            Destroy(this.gameObject);
+        }
 
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
