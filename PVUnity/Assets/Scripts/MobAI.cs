@@ -29,7 +29,7 @@ public class MobAI : MonoBehaviour
         {
             MoveToRandomPos();
         }
-        if(Vector2.Distance(target.position,transform.position) <= 3)
+        if(Vector2.Distance(target.position,transform.position) <= 5)
         {
             aggressive = true;
             targetPos = new Vector3(target.transform.position.x, target.transform.position.y,-2);

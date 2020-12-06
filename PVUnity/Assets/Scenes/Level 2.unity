@@ -188,10 +188,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: NEXTLEVEL
       objectReference: {fileID: 0}
+    - target: {fileID: 4543350656898622451, guid: 8d90051907ee6534a9f5257a7842ec56,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543350656898622451, guid: 8d90051907ee6534a9f5257a7842ec56,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.014291713
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543350656898622451, guid: 8d90051907ee6534a9f5257a7842ec56,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.09289104
+      objectReference: {fileID: 0}
     - target: {fileID: 4543350656898622452, guid: 8d90051907ee6534a9f5257a7842ec56,
         type: 3}
       propertyPath: levelID
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543350656898622453, guid: 8d90051907ee6534a9f5257a7842ec56,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543350656898622454, guid: 8d90051907ee6534a9f5257a7842ec56,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d90051907ee6534a9f5257a7842ec56, type: 3}

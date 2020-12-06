@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public Text hpText;
     public float moveSpeed = 10f;
     public float health = 100f;
+    public bool isAlive = true;
     float angleRad;
     float angleDeg;
 
@@ -40,6 +41,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (!isAlive)
+        {
+            Application.LoadLevel(0);
+        }
         if(timePassed <= delay )
         {
             timePassed += 1 * Time.deltaTime;
@@ -66,6 +71,11 @@ public class Player : MonoBehaviour
         hpText.text = "HP:" +Mathf.Round(health).ToString();
         gettingDamaged = true;
         timePassed = 0;
+        if (health <= 0)
+        {
+            health = 0;
+            isAlive = false;
+        }
 
     }
     
