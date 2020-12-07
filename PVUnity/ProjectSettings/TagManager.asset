@@ -8,6 +8,8 @@ TagManager:
   - Pickup
   - AmmoPickup
   - KeyPickup
+  - Monster
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -21,8 +23,8 @@ TagManager:
   - Obstacles
   - Lights
   - PickUpWeapon
-  - 
-  - 
+  - Boss
+  - BossBullet
   - 
   - 
   - 

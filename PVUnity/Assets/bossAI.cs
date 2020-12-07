@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MobAI : MonoBehaviour
+public class bossAI : MonoBehaviour
 {
     public float damage = 5f;
     private Transform target;
-     float hp = 300f;
-    float noticeRadius = 5f;
-     float speed = 5f;
+  public  float hp = 3000f;
+  public  float noticeRadius = 15f;
+   public float speed = 3f;
     bool aggressive = false;
     public GameObject keycard;
     Vector3 targetPos;
@@ -35,11 +35,11 @@ public class MobAI : MonoBehaviour
         {
             MoveToRandomPos();
         }
-        if(Vector2.Distance(target.position,transform.position) <= 5)
+        if (Vector2.Distance(target.position, transform.position) <= noticeRadius)
         {
             aggressive = true;
-            targetPos = new Vector3(target.transform.position.x, target.transform.position.y,-2);
-            if(Vector2.Distance(target.position, transform.position) <= 1f)
+            targetPos = new Vector3(target.transform.position.x, target.transform.position.y, -2);
+            if (Vector2.Distance(target.position, transform.position) <= 4f)
             {
                 DamagePlayer();
             }
@@ -69,5 +69,4 @@ public class MobAI : MonoBehaviour
     {
         hp -= damage;
     }
-
 }
