@@ -10,7 +10,7 @@ public class MenuController : MonoBehaviour
     }
     public void onContinueClick()
     {
-        int level = PlayerPrefs.GetInt("lastLevel",0);
+        int level = PlayerPrefs.GetInt("lastlevel",0);
         Application.LoadLevel(level);
     }
     public void onOptionsClick()

@@ -13,6 +13,8 @@ public class bossAI : MonoBehaviour
     public GameObject keycard;
     Vector3 targetPos;
     Vector3 initialPos;
+
+    
     void Start()
     {
         target = GameObject.Find("Player").GetComponent<Transform>();

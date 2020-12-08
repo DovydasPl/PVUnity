@@ -63,6 +63,10 @@ public class Player : MonoBehaviour
         {
             bloodParticles.emissionRate = 0f;
         }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.LoadLevel(0);
+        }
 
     }
     public void ReceiveDamage(float damage)

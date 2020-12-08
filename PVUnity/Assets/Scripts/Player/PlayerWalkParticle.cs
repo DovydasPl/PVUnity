@@ -9,6 +9,7 @@ public class PlayerWalkParticle : MonoBehaviour
 
     Player player;
     ParticleSystem ps;
+    public AudioSource footsteps;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,12 @@ public class PlayerWalkParticle : MonoBehaviour
     {
         rate = Mathf.Sqrt(player.velocity.x * player.velocity.x) + Mathf.Sqrt(player.velocity.y * player.velocity.y);
         ps.emissionRate = rate * rateMultiplyer;
-
+        if(rate != 0)
+        {
+            if (footsteps.isPlaying == false)
+            {
+                footsteps.Play();
+            }
+        }
     }
 }

@@ -18,7 +18,8 @@ public class ShootGun : MonoBehaviour
     public float reloadTime = 1.2f;
     private Text ammoDisplay;
     private SendMessage sendMsg;
-
+    public AudioSource weapon;
+    public AudioSource reload;
     void Start()
     {
         ammoDisplay = GameObject.Find("AmmoText").GetComponent<Text>();
@@ -37,12 +38,16 @@ public class ShootGun : MonoBehaviour
             ammoInMag--;
             ammoTotal--;
             DisplayAmmo();
+            
+                weapon.Play();
+            
         }
     }
     public void Reload()
     {
         if(ammoTotal > 0)
         {
+            reload.Play();
             SendMessage(2);
             if (ammoTotal > magSize)
             {
